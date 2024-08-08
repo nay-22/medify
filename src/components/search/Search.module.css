@@ -1,0 +1,60 @@
+.search {
+    background-color: white;
+    border-radius: 1em;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 10px 10px rgb(231, 231, 231);
+    padding: 2em;
+    position: absolute;
+    top: 20vh;
+    left: 13vw;
+}
+
+.searchAtHome {
+    top: 57vh;
+}
+
+.searchAtBookings {
+    width: 50%;
+    left: 35vw;
+}
+
+.title {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.button {
+    height: 100%;
+}
+
+.homeSelector {
+    text-align: center;
+    padding: 4em 0 0;
+    color: rgb(72, 72, 72);
+}
+
+.homeSelector h4 {
+    margin-bottom: 4em;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto;
+}

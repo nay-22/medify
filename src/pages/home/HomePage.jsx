@@ -12,7 +12,7 @@ import styles from "./HomePage.module.css";
 
 const HomePage = () => {
     return <>
-        <Hero />
+        {/* <Hero /> */}
         <Search />
         <Coupon />
         <Specialization />

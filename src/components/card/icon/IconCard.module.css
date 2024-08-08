@@ -1,0 +1,20 @@
+.card {
+    background-color: #FAFBFE;
+    padding: .5em;
+}
+
+.name {
+    color: #ABB6C7;
+}
+
+.active {
+    background: #2AA7FF14;
+    border: 2px #2AA7FF solid;
+    border-radius: .5em;
+}
+
+.active .name {
+    color: #2AA7FF;
+    font-weight: bold;
+}
+

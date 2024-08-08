@@ -1,0 +1,25 @@
+
+.hero {
+    width: 73%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+}
+
+.content h1 {
+    font-size: 4em;
+}
+
+.content h1 span {
+    color: #2AA7FF;
+}
+
+.content p {
+    color: grey;
+    font-size: 1.2em;
+}
+
+.content * {
+    margin: .2em 0;
+}
