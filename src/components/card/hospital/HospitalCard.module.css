@@ -1,0 +1,54 @@
+.card {
+    background-color: white;
+    padding: 2em;
+    margin: 1.5em 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    align-items: center;
+    /* width: 60%; */
+    border-radius: 1em;
+    gap: 20px;
+}
+
+.hr {
+    background-color: rgb(243, 243, 243);
+    border: none;
+    height: 2px;
+    margin: 10px 0;
+}
+
+
+.bookBtn {
+    align-self: last baseline;
+}
+
+.rating {
+    background-color: #00A500;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(250, 250, 250, 0.629);
+    padding: 0 .3em;
+    border-radius: .2em;
+    gap: 5px;
+}
+
+.name {
+    color: #14BEF0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.type, .phone, .location {
+    color: #414146;
+}
