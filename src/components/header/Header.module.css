@@ -1,0 +1,59 @@
+.header {
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100.57%);
+    padding: 0 0 6em 0;
+    border-radius: 0 0 1em 1em;
+}
+
+.quote {
+    text-align: center;
+    color: white;
+    padding: .5em;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex: 1;
+}
+
+.links {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    flex: 2
+}
+
+.logo {
+    margin: 0 4em 0 3em;
+}
+
+.link {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    padding: 1em 0;
+}
+
+.active {
+    text-decoration: none;
+    color: #2AA7FF;
+    border-bottom: #2AA7FF 4px solid;
+}
+
+.inactive {
+    text-decoration: none;
+    color: black;
+}
+
+.booking {
+    background-color: #2AA7FF;
+    padding: 1em 2em;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+}
