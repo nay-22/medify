@@ -1,8 +1,13 @@
+import { useContext, useEffect, useState } from "react";
 import styles from "./BookingList.module.css";
+import SearchResult from "../searchresult/SearchResult";
+import HospitalContext from "../../contexts/HospitalContext";
 
-const BookingList = () => {
+const BookingList = ({hospitals}) => {
+    
+
     return <>
-        <h2>BookingList</h2>
+        <SearchResult data={hospitals} booked />
     </>;
 };
 

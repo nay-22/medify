@@ -12,6 +12,7 @@ import Ambulance from "../../assets/Ambulance.png";
 import Drugstore from "../../assets/Drugstore.png";
 import IconCard from "../card/icon/IconCard";
 import HospitalContext from "../../contexts/HospitalContext";
+import BookedContext from "../../contexts/BookedContext";
 import { useSnackbar } from "notistack";
 
 const SearchIcon = () => {
@@ -21,9 +22,11 @@ const SearchIcon = () => {
 };
 
 const Search = () => {
-    const [hospitals, setHospitals] = useContext(HospitalContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+    const [hospitals, setHospitals] = useContext(HospitalContext);
+    const [booked, setBooked] = useContext(BookedContext);
 
     const { enqueueSnackbar } = useSnackbar()
 
@@ -33,6 +36,7 @@ const Search = () => {
 
     const [cityInput, setCityInput] = useState('');
     const [stateInput, setStateInput] = useState('');
+    const [filterInput, setFilterInput] = useState('');
 
     const [states, setStates] = useState([]);
     const [cities, setCities] = useState([]);
@@ -125,8 +129,16 @@ const Search = () => {
         }
     }
 
-    const handleFilterHospital = async () => {
+    useEffect(() => {
+        if (filterInput === '') setBooked(JSON.parse(localStorage.getItem("bookings")) || []);
+    }, [filterInput]);
 
+    const handleFilterHospital = (value) => {
+        setFilterInput(value);
+    }
+
+    const handleBookedFilter = () => {
+        setBooked(prev => prev.filter(item => item && item.name.includes(filterInput)));
     }
 
     return (
@@ -137,7 +149,7 @@ const Search = () => {
                     {location.pathname === "/bookings" ?
                         <TextField
                             id="hospital"
-                            onChange={handleFilterHospital}
+                            onChange={(e) => handleFilterHospital(e.target.value)}
                             className={styles.input}
                             placeholder="Search By Hospital"
                         /> :
@@ -206,13 +218,13 @@ const Search = () => {
                         </>
                     }
                     <Button
-                        disabled={!query.state || !query.city}
+                        disabled={location.pathname === "/bookings" ? false : !query.state || !query.city}
                         startIcon={<SearchIcon sx={{ fontSize: 40 }} />}
                         sx={{ padding: ".65em 4em", backgroundColor: "#2AA8FF", borderRadius: ".5em", textTransform: "none", fontSize: "1.2em" }}
                         className={styles.button}
                         size="large"
                         variant="contained"
-                        onClick={handleSearch}
+                        onClick={location.pathname === "/bookings" ? handleBookedFilter : handleSearch}
                     >
                         Search
                     </Button>

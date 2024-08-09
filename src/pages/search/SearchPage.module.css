@@ -3,10 +3,10 @@
 }
 
 .containerInner {
-    padding-top: 8em;
     width: 70%;
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
