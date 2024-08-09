@@ -5,23 +5,24 @@
     margin: auto;
     box-shadow: 0 10px 10px rgb(231, 231, 231);
     padding: 2em;
-    position: absolute;
-    top: 20vh;
-    left: 13vw;
+    position: relative;
+    top: -5vh;
+    left: 0vw;
 }
 
 .searchAtHome {
-    top: 57vh;
+    top: -25vh;
 }
 
 .searchAtBookings {
     width: 50%;
-    left: 35vw;
+    top: -5vw;
+    left: 20vw;
 }
 
 .title {
-    position: absolute;
-    top: 20vh;
+    position: relative;
+    top: -10vh;
     left: 10vw;
     color: white;
 }
@@ -44,12 +45,12 @@
 
 .homeSelector {
     text-align: center;
-    padding: 4em 0 0;
+    padding: 2em 0 0;
     color: rgb(72, 72, 72);
 }
 
 .homeSelector h4 {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .categories {
