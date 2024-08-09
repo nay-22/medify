@@ -1,0 +1,45 @@
+.outerContainer {
+    width: 370px;
+    height: 505px;
+    padding: .25em;
+    box-shadow: 0 0 10px rgb(239, 239, 239);
+    border-radius: 20em 20em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em auto;
+}
+
+.innerContainer {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25em 25em 0 0;
+    background: linear-gradient(144.2deg, #E1F3FF 0%, #2AA7FF 100%);
+    
+    margin: 1em;
+}
+
+.img {
+    width: 95%;
+    height: 90%;
+    object-fit: fill;
+    padding: 3em 0 0 0;
+    object-position: 50% 50%;
+}
+
+.text {
+    text-align: center;
+}
+
+.name {
+    color: #1B3C74;
+    font-size: 1.5em;
+}
+
+.spec {
+    color: #2AA7FF;
+}

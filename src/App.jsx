@@ -8,18 +8,23 @@ import BookingsPage from "./pages/bookings/BookingsPage";
 
 import HospitalContext from "./contexts/HospitalContext";
 import { useState } from 'react';
+import BookedContext from './contexts/BookedContext';
 
 function App() {
   const [hospitals, setHospitals] = useState([]);
+  const [booked, setBooked] = useState([]);
   return (
     <HospitalContext.Provider value={[hospitals, setHospitals]}>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="search" element={<SearchPage />} />
-          <Route path="bookings" element={<BookingsPage />} />
-        </Route>
-      </Routes>
+      <BookedContext.Provider value={[booked, setBooked]}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            
+            <Route path="search" element={<SearchPage />} />
+            <Route path="bookings" element={<BookingsPage />} />
+          </Route>
+        </Routes>
+      </BookedContext.Provider>
     </HospitalContext.Provider>
   );
 }

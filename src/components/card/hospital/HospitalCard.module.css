@@ -4,12 +4,11 @@
     margin: 1.5em 0;
     border-radius: 1em;
     max-width: 45vw;
-    width: 100%;
 }
 
 .cardContent {
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 1fr 4fr 2.5fr;
     align-items: center;
     gap: 20px;
 }
@@ -24,6 +23,9 @@
 
 .bookBtn {
     align-self: last baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .rating {
@@ -57,26 +59,26 @@
     color: #414146;
 }
 
-.bookingInterface {
-    padding: 0 1em;
-}
-
-.swiper {
-    padding: 0 1em;
-}
-
-.slot {
-    /* height: 150px; */
-    margin: 2em 0;
-    padding: 1em;
-    border-radius: 1em;
+.bookedDetails {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* width: fit-content; */
+    justify-self: center;
+    justify-content: flex-start;
+    align-self: baseline;
+    gap: 10px;
 }
 
-.slot:hover {
-    cursor: pointer;
-    background-color: #14BEF0;
+.bookedTime {
+    color: #2AA7FF;
+    border: 1px solid #2AA7FF;
+    padding: .5em;
+    border-radius: .2em;
+}
+
+.bookedDate {
+    color: #007100;
+    border: 1px solid #00A500;
+    padding: .5em;
+    border-radius: .2em;
+    font-weight: 500;
 }

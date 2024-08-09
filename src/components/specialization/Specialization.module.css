@@ -1,0 +1,41 @@
+.container {
+    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+    padding: 4em 0;
+}
+
+.title {
+    text-align: center;
+    color: #1B3C74;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+    background-color: white;
+    margin: auto;
+    padding: 2em 5em;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+    border-radius: 1em;
+}
+
+.innerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 2em 6em;
+}
+
+.icon {
+    background-color: white;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
