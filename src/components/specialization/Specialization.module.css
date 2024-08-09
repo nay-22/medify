@@ -22,6 +22,10 @@
     border-radius: 1em;
 }
 
+.iconContainer * {
+    background-color: white;
+}
+
 .innerContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
