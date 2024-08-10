@@ -1,5 +1,5 @@
 import styles from "./HospitalCard.module.css";
-import Hospi from "../../../assets/Hospi.png";
+import Hospi from "../../../assets/hospi.png";
 import { Button } from "@mui/material";
 
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
