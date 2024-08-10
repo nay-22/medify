@@ -1,0 +1,46 @@
+.container {
+    box-shadow: 0 0 10px rgb(196, 196, 196);
+    width: fit-content;
+    border-radius: .5em;
+    width: 400px;
+}
+
+.top {
+    width: 100%;
+}
+
+.bottom {
+    padding: 0 1em;
+}
+
+.bottom > div {
+    margin: .5em 0;
+}
+
+.top img {
+    width: 100%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: grey;
+}
+
+.authName, .title {
+    color: #1B3C74;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.3em;
+}

@@ -50,3 +50,10 @@
 .medify {
     color: #2AA8FF;
 }
+
+.linkform {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}

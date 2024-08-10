@@ -19,11 +19,14 @@ const Download = () => {
                 <img className={styles.vector} src={Vector} alt="" />
                 <div>
                     <p className={styles.cmt}>Get the link to download the app</p>
-                    <TextField InputProps={{ startAdornment: <Phone /> }} label="Phone Number" placeholder="Enter phone number" /> <Button sx={{ backgroundColor: "#2AA8FF", fontSize: "1em", padding: ".9em 2em" }} variant="contained">Send SMS</Button>
+                    <div className={styles.linkform}>
+
+                        <TextField sx={{width: "65%"}} InputProps={{ startAdornment: <Phone /> }} label="Phone Number" placeholder="Enter phone number" /> <Button sx={{ backgroundColor: "#2AA8FF", fontSize: "1em", padding: ".9em 2em" }} variant="contained">Send SMS</Button>
+                    </div>
                 </div>
                 <div className={styles.store}>
-                    <img width="250px" src={PlayStore} alt="" />
-                    <img width="250px" src={AppStore} alt="" />
+                    <Button><img width="250px" src={PlayStore} alt="" /></Button>
+                    <Button><img width="250px" src={AppStore} alt="" /></Button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,39 @@
+.top {
+    padding-top: 2em;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 10em;
+}
+
+.cmt, .title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cmt {
+    color: #2AA7FF
+}
+
+.title {
+    color:#1B3C74;
+    font-size: 3em;
+}
+
+.left, .right {
+    justify-self: center;
+}
+
+.right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2em 0em;
+    font-weight: bold;
+    color: #1B3C74;
+    font-size: 1.3em;
+}

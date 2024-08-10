@@ -1,8 +1,11 @@
 import styles from "./Family.module.css";
+import Img from "../../../assets/family.png"
 
 const Family = () => {
     return <>
-        <h2>Family</h2>
+        <div className={styles.container}>
+            <img src={Img} alt="" />
+        </div>
     </>;
 };
 

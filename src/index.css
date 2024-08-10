@@ -4,3 +4,7 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
+
+button:hover {
+  cursor: pointer;
+}

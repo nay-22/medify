@@ -1,0 +1,24 @@
+.top {
+    padding: 2em 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10em 4em;
+}
+
+.cmt, .title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cmt {
+    color: #2AA7FF
+}
+
+.title {
+    color:#1B3C74;
+    font-size: 3em;
+}
